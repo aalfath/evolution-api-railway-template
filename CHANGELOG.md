@@ -2,6 +2,10 @@
 
 Deployers get an "update available" notice on Railway when this repo's `main` changes. Read the entry for the version you're moving to before you apply it.
 
+## 2026-11-16: Deploy on Railway button
+
+- README: added the Deploy on Railway button for the published template (`evolution-api-8`). No change to the deployed service.
+
 ## 2026-11-16: Evolution API 2.3.7, built from this repo
 
 - The Railway template `evolution-api-8` now builds the Evolution API service from this repo instead of running the Docker image directly, so future version bumps reach deployers as update notices.

@@ -1,5 +1,7 @@
 # Evolution API on Railway
 
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template/evolution-api-8?utm_medium=integration&utm_source=button&utm_campaign=evolution-api)
+
 One-click Railway template for [Evolution API](https://github.com/evolution-foundation/evolution-api) **2.3.7**, the open-source REST API for WhatsApp (Baileys QR-code connection or the official WhatsApp Cloud API), with its web manager.
 
 ## What the template deploys
