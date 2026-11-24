@@ -1,6 +1,6 @@
 # Evolution API, official image pinned by version and digest.
 # Bump both the tag and the digest together, and add a CHANGELOG.md entry.
-FROM evoapicloud/evolution-api:v2.3.7@sha256:1bd8afc4a6cf48822e6cf02469aeae7bd35a12a6b616eacd1291926307f4d339
+FROM evoapicloud/evolution-api:v2.3.8@sha256:b2712c06caf333c7a7ade3bbbdd25f70c32abb74537ec75f786c24c99675deb3
 
 COPY railway-start.sh /evolution/railway-start.sh
 
