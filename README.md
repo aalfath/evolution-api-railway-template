@@ -2,13 +2,13 @@
 
 [![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template/evolution-api-8?utm_medium=integration&utm_source=button&utm_campaign=evolution-api)
 
-One-click Railway template for [Evolution API](https://github.com/evolution-foundation/evolution-api) **2.3.7**, the open-source REST API for WhatsApp (Baileys QR-code connection or the official WhatsApp Cloud API), with its web manager.
+One-click Railway template for [Evolution API](https://github.com/evolution-foundation/evolution-api) **2.3.8**, the open-source REST API for WhatsApp (Baileys QR-code connection or the official WhatsApp Cloud API), with its web manager.
 
 ## What the template deploys
 
 | Service | Source | Notes |
 |---|---|---|
-| Evolution API | this repo (`Dockerfile`) | `evoapicloud/evolution-api:v2.3.7` pinned by digest, public domain, health check `/`, volume at `/evolution/instances` |
+| Evolution API | this repo (`Dockerfile`) | `evoapicloud/evolution-api:v2.3.8` pinned by digest, public domain, health check `/`, volume at `/evolution/instances` |
 | Postgres | Railway Postgres 18 | instances, sessions, contacts, chats and messages |
 | Redis | Railway Redis 8.2 | cache |
 
@@ -36,4 +36,4 @@ Nothing is asked at deploy time. Optional features (webhooks, RabbitMQ, S3, Chat
 
 The Evolution API service builds from this repo's `main` branch. When the pinned image moves to a new version, the change lands on `main` with a `CHANGELOG.md` entry, and Railway shows deployers an "update available" notice. Nothing changes on your project until you apply it.
 
-2.4.0 is still a release candidate and requires activating each server against Evolution Foundation's licensing service, so this template stays on 2.3.7 until a stable release without that requirement (or 2.3.8) ships.
+2.4.0 is still a release candidate and requires activating each server against Evolution Foundation's licensing service, so this template stays on the 2.3 line. Instance tokens (the per-instance `hash`) can still act on other instances on the same server in 2.3.8 ([issue #2435](https://github.com/evolution-foundation/evolution-api/issues/2435), still open); the global key isn't affected. If you hand instance tokens to other people, run one deployment per person.
